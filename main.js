@@ -10,21 +10,30 @@ const info=document.getElementById("info");
 const url="http://ipinfo.io/json?token=96c23e8b1c9f73"
 
 idfb.addEventListener('mouseenter',e=>{
-    idfb.classList.remove('col-sm-2');
-    idfb.classList.add('col-sm-3');
+    idfb.style.border="5px solid";
+    idfb.style.color="#3b5998";
+    //  idfb.classList.remove('col-lg-2');
+    //  idfb.classList.add('col-lg-4');
+
 });
 idfb.addEventListener('mouseout',e=>{
-    idfb.classList.remove('col-sm-3');
-    idfb.classList.add('col-sm-2');
+    idfb.style.border="";
+    idfb.style.color="#3b5998";
+    //  idfb.classList.remove('col-lg-4');
+    //  idfb.classList.add('col-lg-2');
 });
 
 idig.addEventListener('mouseenter',e=>{
-    idig.classList.remove('col-sm-2');
-    idig.classList.add('col-sm-3');
+    idig.style.border="5px solid";
+    idig.style.color="#E74C3C";
+    //  idig.classList.remove('col-lg-2');
+    //  idig.classList.add('col-lg-4');
 });
 idig.addEventListener('mouseout',e=>{
-    idig.classList.remove('col-sm-3');
-    idig.classList.add('col-sm-2');
+    idig.style.border="";
+    idig.style.color="#E74C3C";
+    //  idig.classList.remove('col-lg-4');
+    //  idig.classList.add('col-lg-2');
 });
 idfb.addEventListener("click",function(){
     window.open("https://www.facebook.com/profile.php?id=100000129657673");
